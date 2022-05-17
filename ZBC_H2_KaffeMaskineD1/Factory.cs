@@ -31,6 +31,7 @@ namespace ZBC_H2_KaffeMaskineD1
             if (finishedCoffee is IComponentInput) ((IComponentInput)finishedCoffee).SetInput(coffeeHolder);
 
             MoccamasterCoffeeMachine coffeeMachine = new MoccamasterCoffeeMachine(bottomHeater, waterTank, coffeeHolder, onOffSwitch, heatLevelSwitch, finishedCoffee);
+            
             return coffeeMachine;
         }
     }
